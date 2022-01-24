@@ -9,6 +9,9 @@
   "bin": {
     "emoji-commit": "./app.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/sho-ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
