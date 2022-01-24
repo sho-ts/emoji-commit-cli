@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { prompt } = require('enquirer');
 const emojis = require('./emojis.json');
 const options = require('./options.json');
@@ -20,5 +21,5 @@ const execSync = require('child_process').execSync;
 
   const index = options.findIndex(option => option.value === res.prefix);
 
-  execSync(`git commit -m ":${emojis[index].emoji}: ${res.commitMessage}"`);
+  execSync(`git commit -m ":${emojis[index]}: ${res.commitMessage}"`);
 })()
